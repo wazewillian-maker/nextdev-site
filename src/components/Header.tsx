@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
 const links = [
+  ['Início', '#inicio'],
   ['Serviços', '#servicos'],
-  ['Diferenciais', '#diferenciais'],
   ['Portfólio', '#portfolio'],
+  ['Sobre', '#sobre'],
   ['Contato', '#contato'],
 ]
 
@@ -16,13 +17,13 @@ export function Header() {
         <span className="brand-mark">N</span>
         <span>Next <strong>Dev</strong></span>
       </a>
-      <button className="menu-button" type="button" aria-label="Abrir menu" aria-expanded={open} onClick={() => setOpen(!open)}>
+      <button className="menu-button" type="button" aria-label={open ? 'Fechar menu' : 'Abrir menu'} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>
         <span /><span />
       </button>
-      <nav className={open ? 'nav open' : 'nav'} aria-label="Navegação principal">
+      <nav id="main-navigation" className={open ? 'nav open' : 'nav'} aria-label="Navegação principal">
         {links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
       </nav>
-      <a className="header-cta" href="#contato">Iniciar projeto <span>↗</span></a>
+      <a className="header-cta" href="#contato">Solicitar orçamento <span>↗</span></a>
     </header>
   )
 }

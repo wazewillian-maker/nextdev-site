@@ -1,14 +1,16 @@
+import { WHATSAPP_URL } from '../constants/contact'
+
 export function Hero() {
   return (
     <section className="hero-section" id="inicio">
       <div className="hero-glow" />
       <div className="hero-grid" />
-      <div className="hero-content">
+      <div className="hero-content reveal">
         <div className="eyebrow"><span /> Tecnologia que impulsiona negócios</div>
         <h1>Transformamos ideias em <span>aplicativos e sites</span> profissionais.</h1>
         <p>Criamos soluções digitais modernas para empresas que desejam crescer.</p>
         <div className="hero-actions">
-          <a className="button primary" href="#contato">Solicitar orçamento <span>↗</span></a>
+          <a className="button primary" href={WHATSAPP_URL} target="_blank" rel="noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">Solicitar orçamento <span>↗</span></a>
           <a className="button secondary" href="#servicos">Ver serviços <span>↓</span></a>
         </div>
         <div className="hero-proof">
@@ -17,7 +19,7 @@ export function Hero() {
           <div><strong>∞</strong><span>Possibilidades digitais</span></div>
         </div>
       </div>
-      <div className="hero-visual" aria-hidden="true">
+      <div className="hero-visual reveal" aria-hidden="true">
         <div className="orbit orbit-one" /><div className="orbit orbit-two" />
         <div className="code-card glass-card">
           <div className="window-bar"><span /><span /><span /></div>
