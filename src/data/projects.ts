@@ -9,7 +9,11 @@ export type Project = {
   featured: boolean
   technologies: string[]
   visualClass: string
+  ctaLabel?: string
+  showTechnologies?: boolean
 }
+
+export const BELLA_ESSENCE_URL = 'https://bella-essence-site-demo.vercel.app/'
 
 export const projects: Project[] = [
   {
@@ -59,6 +63,20 @@ export const projects: Project[] = [
     featured: false,
     technologies: ['React', 'TypeScript', 'APIs'],
     visualClass: 'project-dashboard',
+  },
+  {
+    id: 'bella-essence',
+    title: 'Bella Essence',
+    category: 'Site Demonstrativo para Clínica de Estética',
+    description: 'Site moderno e responsivo desenvolvido para demonstrar uma solução profissional para clínicas de estética, salões de beleza e profissionais da área da beleza.',
+    image: '/images/projects/bella-essence-hero.jpg',
+    link: BELLA_ESSENCE_URL,
+    status: 'Projeto demonstrativo',
+    featured: false,
+    technologies: ['React', 'Vite', 'Tailwind CSS'],
+    visualClass: 'project-bella-essence',
+    ctaLabel: 'Visualizar Projeto',
+    showTechnologies: true,
   },
 
   // Para cadastrar um trabalho, copie um dos objetos acima e cole aqui.
