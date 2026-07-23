@@ -14,7 +14,7 @@ export type Project = {
 }
 
 export const BELLA_ESSENCE_URL = 'https://bella-essence-site-demo.vercel.app/'
-export const PRIME_RESIDENCE_URL = '/imobiliaria-demo/'
+export const PRIME_RESIDENCE_URL = '/imobiliaria-demo/index.html'
 
 export const projects: Project[] = [
   {
