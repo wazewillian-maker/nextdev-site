@@ -14,6 +14,7 @@ export type Project = {
 }
 
 export const BELLA_ESSENCE_URL = 'https://bella-essence-site-demo.vercel.app/'
+export const PRIME_RESIDENCE_URL = '/imobiliaria-demo/'
 
 export const projects: Project[] = [
   {
@@ -76,6 +77,20 @@ export const projects: Project[] = [
     technologies: ['React', 'Vite', 'Tailwind CSS'],
     visualClass: 'project-bella-essence',
     ctaLabel: 'Visualizar Projeto',
+    showTechnologies: true,
+  },
+  {
+    id: 'imobiliaria-prime-residence',
+    title: 'Imobiliária Prime Residence',
+    category: 'Site para Imobiliária',
+    description: 'Site demonstrativo moderno para imobiliárias, com imóveis para venda, locação mensal e temporada, filtros de busca, páginas detalhadas e integração com WhatsApp.',
+    image: '/images/projects/imobiliaria-prime-residence.jpg',
+    link: PRIME_RESIDENCE_URL,
+    status: 'Projeto demonstrativo',
+    featured: false,
+    technologies: ['React', 'TypeScript', 'Vite'],
+    visualClass: 'project-prime-residence',
+    ctaLabel: 'Ver Projeto',
     showTechnologies: true,
   },
 
